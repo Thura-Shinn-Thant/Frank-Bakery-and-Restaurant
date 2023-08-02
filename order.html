@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Iceberry order</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Krona+One&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design for Bootstrap</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" type="text/css" href="https://fontawesome.com/icons/cc-visa?style=brands">
+  <link rel="stylesheet" type="text/css" href="https://fontawesome.com/icons/cc-amex?style=brands">
+  <link rel="stylesheet" type="text/css" href="https://fontawesome.com/icons/cc-mastercard?style=brands">
+  <link rel="stylesheet" type="text/css" href="https://fontawesome.com/icons/cc-discover?style=brands">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+<style>
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+  background-color: #e5e3e3;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+height: 1000px;
+}
+input[type=submit]:hover {
+  background-color: red;
+}
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: white;
+  
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+  font-family: 'Amaranth', sans-serif;
+  
+  color: black;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 1000px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+.logo{
+    width: 64px;
+    height: 60px;
+    
+    
+  }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#ffffff;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ffffff;
+}
+
+.active {
+  background-color: #ffffff;
+}
+
+ul li a{
+  text-decoration: none;
+  color: black;
+
+}
+ul li a:hover{
+  font-weight: bold;
+  color: black;
+
+}
+.body{
+  height: 1200px;
+  background-color: grey;
+}
+.container1{
+  height: 200px;
+  background-color: #1b1b1b;
+}
+.row1{
+  background-color: #1b1b1b;
+  align-items: center;
+}
+.last-footer{
+  background-color: #1b1b1b;
+  text-align: center;
+}
+.b{
+  background-color: #1b1b1b;
+}
+.Copyright{
+  font-weight: bold;
+  color: white;
+}
+.text{
+  color: black;
+  font-weight: bolder;
+}
+</style>
+</head>
+<body>
+<!-- nav bar start -->
+<ul>
+  <li>
+    <a href="home.html"><img src="image/logo.jpg" class="logo" /></a>
+  </li>
+  <li><a href="Home.html">Home</a></li>
+  <li><a href="NewMenu.html">Menu</a></li>
+  <li><a href="Aboutus.html">About Us</a></li>
+
+  <li style="float: right">
+    <a href="contact.html">Contact</a>
+  </li>
+  <li style="float: right">
+    <a class="active" href="feedback.html">Feedback here</a>
+  </li>
+
+</ul>
+<div id="demo" class="carousel slide" data-ride="carousel">
+<!-- nav bar end -->
+
+<span><h2>Enjoy your Order</h2></span>
+
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+             <i class="fab fa-cc-visa" style="color:navy;"></i>
+              <i class="fab fa-cc-amex" style="color:blue;"></i>
+              <i class="fab fa-cc-mastercard" style="color:red;"></i>
+              <i class="fab fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" >
+  <a href=""><label for="vehicle1" class="label1"> I agree to terms and conditions and Privacy policy</label></a><br>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+  </div>
+<!-- Footer start-->
+<footer class="b">
+
+  <!-- Footer Elements -->
+  <div class="container1">
+
+    <!-- Grid row-->
+    <div class="row1">
+
+      <!-- Grid column -->
+      <div class="col-md-12 py-5">
+        <div class="mb-5 flex-center">
+
+          <!-- Facebook -->
+          <a class="ic" href="https://www.facebook.com"  target="_blank">
+            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="ic" href="https://www.twitter.com" target="_blank">
+            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="ic" href="https://www.google.com" target="_blank">
+            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="ic" href="https://www.linkedin.com" target="_blank">
+            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ic" href="https://www.instagram.com" target="_blank">
+            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Pinterest-->
+          <a class="ic" href="https://www.pinterest.com" target="_blank">
+            <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+          </a>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="last-footer"><b class="Copyright">© 2020 Copyright:</b>
+    <a href="home.html" class="Copyright">Ice_Berry.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer end-->
+</body>
+</html>

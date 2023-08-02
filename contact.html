@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Frank Bakery and Restaurant</title>
+    <link rel="icon" type="image/x-icon" href="image/titleicon3.jpg" />
+  </head>
+  <body>
+    <!-- nav bar start -->
+    <nav class="nav">
+      <ul class="nav-list">
+        <li>
+          <a href="home.html"><img src="image/logo.jpg" class="logo" /></a>
+        </li>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="NewMenu.html">Menu</a></li>
+        <li><a href="Aboutus.html">About Us</a></li>
+        <li style="float: right"><a href="contact.html">Contact</a></li>
+        <li style="float: right">
+          <a class="active" href="feedback.html">Feedback here</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- nav bar end -->
+
+    <!--Contact div start-->
+    <div id="contact">
+      <div id="icon-form">
+        <ul id="icon-list">
+          <li><i class="fa-solid fa-location-dot"></i></li>
+          <li><i class="fa-solid fa-phone-volume"></i></li>
+          <li><i class="fa-regular fa-envelope"></i></li>
+        </ul>
+      </div>
+      <div id="span-form">
+        <ul id="span-list">
+          <li><span>Address:</span></li>
+          <li><span>Phone:</span></li>
+          <li><span>Email:</span></li>
+        </ul>
+      </div>
+      <div id="p-form">
+        <ul id="p-list">
+          <li>
+            <p>
+              198 West 21th Street,
+              <br />
+              Suite 721 New York
+              <br />
+              NY 10016
+            </p>
+          </li>
+          <li><p>+ 1235 2355 98</p></li>
+          <li><p>info@yoursite.com</p></li>
+        </ul>
+      </div>
+    </div>
+    <div id="input-area">
+      <div id="input-boxes">
+        <input type="text" name="name" placeholder="Type Your Name" />
+      </div>
+      <div id="input-boxes">
+        <input type="email" name="email" placeholder="Type Your Email" />
+      </div>
+      <div id="input-boxes">
+        <input type="text" name="subject" placeholder="Type your subject" />
+      </div>
+      <div id="input-boxes">
+        <textarea
+          name="message"
+          placeholder="Type Message"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <div id="input-boxes">
+        <input
+          type="submit"
+          value="Send Message"
+          id="send"
+          class="btn btn-info"
+        />
+      </div>
+    </div>
+    <!--Contact div start-->
+  </body>
+
+  <script src="js/sendMsg.js"></script>
+</html>
